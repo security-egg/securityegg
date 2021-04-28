@@ -51,7 +51,7 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 	</p>
 	<p>
 	We now only have to run the code and wait for the result.<br>
-	<img src="/assets/images/ctfs/cyberapocalypse/stream2.png" alt="#" style="margin-top: 2%; max-width: 100%">
+	<img src="/securityegg/assets/images/ctfs/cyberapocalypse/stream2.png" alt="#" style="margin-top: 2%; max-width: 100%">
 	</p>
 </article>
 
@@ -73,7 +73,7 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 	We found the vulnerability. Is the <a href="https://www.geeksforgeeks.org/vulnerability-input-function-python-2-x/" target="_blank">python's input</a> function. It's a vulnerability
 	that exists only in the 2.x versions of python and can be exploited by providing another function's as input. In this case, the program will normally execute the input
 	we passed. Just give it a try to see if that's the case.
-	<img src="/assets/images/ctfs/cyberapocalypse/input.png" alt="#" style="margin-top: 2%; max-width: 100%">
+	<img src="/securityegg/assets/images/ctfs/cyberapocalypse/input.png" alt="#" style="margin-top: 2%; max-width: 100%">
 	</p>
 </article>
 
@@ -96,7 +96,7 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 	<li style="margin: 2%">
 		I opened the <span style="color:darkblue">slide1.xml.rels</span> file with Firefox, because it looks better that way (xD).	
 	</li>
-	<img src="/assets/images/ctfs/cyberapocalypse/encoded_exe.png" alt="#" style="max-width: 100%">
+	<img src="/securityegg/assets/images/ctfs/cyberapocalypse/encoded_exe.png" alt="#" style="max-width: 100%">
 	<li style="margin: 2%">
 		Take a good look at the highlighted text. There's clearly a cmd.exe call that could be malicious. But, what else is being called? We can recognize two reverse
 		part of the string: <span style="color:red">ptth</span> and <span style="color:red">eliftuo</span>. Hmm...
@@ -104,11 +104,11 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 	<li style="margin: 2%">
 		Why don't we reverse the most promising part with python?
 	</li>
-	<img src="/assets/images/ctfs/cyberapocalypse/encoded_reversed.png" alt="#" style="max-width: 100%">
+	<img src="/securityegg/assets/images/ctfs/cyberapocalypse/encoded_reversed.png" alt="#" style="max-width: 100%">
 	<li style="margin: 2%">
 		And now to the <a href="https://gchq.github.io/CyberChef/" target="_blank">CyberChef</a>
 	</li>
-	<img src="/assets/images/ctfs/cyberapocalypse/magic.png" alt="#" style="max-width: 100%">
+	<img src="/securityegg/assets/images/ctfs/cyberapocalypse/magic.png" alt="#" style="max-width: 100%">
 	</ul>
 	</p>
 </article>
