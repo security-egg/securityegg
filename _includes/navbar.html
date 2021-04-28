@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-light" style="background-color:rgba(94,94,120,0.9)">
+  <a class="navbar-brand" href="/">security.egg</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">$HOME &#128125</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/about.html">whoami &#129302</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="nvabarDropdown" role="button" data-toggle="dropdown">ls -la &#129488</a>
+	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		{% for category in site.categories %}
+		  {% assign caturl = category[0] | remove:' ' | downcase %}
+		  <a class="dropdown-item" href="{{site.baseurl}}/category/{{caturl}}">{{category[0]}}</a>
+		{% endfor %}
+	</div>
+      </li>
+    </ul>
+  </div>
+</nav>

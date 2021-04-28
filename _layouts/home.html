@@ -1,0 +1,22 @@
+---
+layout: default
+title: Security Egg
+---
+<div class="container" style="padding-top: 8rem; padding-left: 3rem;">
+<div class="col-lg">
+<ul>
+	{% for post in site.posts limit:4 %}
+		  <div class="row">
+			<div class="card" style="width: 95%; height: 70%; margin: 0.4rem">
+  			<div class="card-body" style="background-color: rgba(200,195,202,0.3)">
+				<h5 class="card-title">{{post.title}}</h5>
+				<h6 class="card-subtitle">{{post.date | date: "%d %B, %Y"}}</h6>
+    				<p class="card-text">{{post.content | truncatewords:60 }}</p>
+				<a href="{{ post.url | relative_url }}" class="card-link" style="color: #37a8b8">More...</a>
+  			</div>
+			</div>
+		    </div>
+	{% endfor %}
+</ul>
+</div>
+</div>
