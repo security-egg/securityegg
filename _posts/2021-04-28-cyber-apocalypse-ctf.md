@@ -98,8 +98,8 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 	</li>
 	<img src="/securityegg/assets/images/ctfs/cyberapocalypse/encoded_exe.png" alt="#" style="max-width: 100%">
 	<li style="margin: 2%">
-		Take a good look at the highlighted text. There's clearly a cmd.exe call that could be malicious. But, what else is being called? We can recognize two reverse
-		part of the string: <span style="color:red">ptth</span> and <span style="color:red">eliftuo</span>. Hmm...
+		Take a good look at the highlighted text. There's clearly a cmd.exe call that could be malicious. But, what else is being called? We can recognize two reversed
+		parts of the string: <span style="color:red">ptth</span> and <span style="color:red">eliftuo</span>. Hmm...
 	</li>
 	<li style="margin: 2%">
 		Why don't we reverse the most promising part with python?
