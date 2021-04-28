@@ -16,7 +16,7 @@
 	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 		{% for category in site.categories %}
 		  {% assign caturl = category[0] | remove:' ' | downcase %}
-		  <a class="dropdown-item" href="securityegg/category/{{caturl}}">{{category[0]}}</a>
+		  <a class="dropdown-item" href="/securityegg/category/{{caturl}}">{{category[0]}}</a>
 		{% endfor %}
 	</div>
       </li>
