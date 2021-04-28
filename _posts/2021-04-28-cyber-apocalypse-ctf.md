@@ -71,7 +71,7 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 	</p>
 	<p>
 	We found the vulnerability. Is the <a href="https://www.geeksforgeeks.org/vulnerability-input-function-python-2-x/" target="_blank">python's input</a> function. It's a vulnerability
-	that exists only in the 2.x versions of python and can be exploited by providing another function's as input. In this case, the program will normally execute the input
+	that exists only in the 2.x versions of python and can be exploited by providing another function as input. In this case, the program will normally execute the input
 	we passed. Just give it a try to see if that's the case.
 	<img src="/securityegg/assets/images/ctfs/cyberapocalypse/input.png" alt="#" style="margin-top: 2%; max-width: 100%">
 	</p>
