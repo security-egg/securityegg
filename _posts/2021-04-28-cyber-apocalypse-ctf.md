@@ -6,7 +6,7 @@ categories: ctfs
 ---
 
 Five days and 62 challenges after, one can say that this ctf was a highlight. That was just the second ctf I participated and I joined team <a href="http://www.pdsn.uniwa.gr/profile/inssec/" target="_blank">
-INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of good players, so we managed to reach the 102th place out of 4740 teams. I managed to contribute with only 4 challenges, 
+INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of good players, so we managed to reach the 102nd place out of 4740 teams. I managed to contribute with only 4 challenges, 
 2 cryptos ( PhaseStream 1 & 2), 1 misc (Input as a Service) and 1 forensics (Alienphish).
 
 <h2 style="margin-top:5%">PhaseStream 1</h2>
