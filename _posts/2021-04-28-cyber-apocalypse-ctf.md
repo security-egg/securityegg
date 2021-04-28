@@ -15,7 +15,7 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 	<i>"The aliens are trying to build a secure cipher to encrypt all our games called "PhaseStream". 
 	They've heard that stream ciphers are pretty good. The aliens have learned of the XOR operation which is used to encrypt a plaintext with a key. 
 	They believe that XOR using a reapeted 5-byte key is enough to build a strong stream cipher. Such silly aliens! 
-	Here's a flag they encrypted this way earlier. Can you decrypt it (hint: what's the flag format?) 2e313f2702184c5a0b1e321205550e03261b094d5c171f56011904"</i><br>
+	Here's a flag they encrypted this way earlier. Can you decrypt it (hint: what's the flag format?) 2e313f2702184c5a0b1e321<br>205550e03261b094d5c171f56011904"</i><br>
 	<p style="margin-top: 2rem">Not the proudest solution out there, but still one fast enough for a ctf. We know that the flag is encoded via XOR function and that the first 5 characters have
 	to be "CHTB{". I just copied the encoded flag and pasted to <a href="https://www.dcode.fr/xor-cipher" target="_blank">dcode.fr</a>. I then decoded with "CHTB{" as key to get the
 	real encryption key. Less is more, I guess...
