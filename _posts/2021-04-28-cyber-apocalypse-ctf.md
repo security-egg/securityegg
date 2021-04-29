@@ -38,7 +38,7 @@ INSSEC</a> of the University of West Attica. Thankfully, INSSEC has a lot of goo
 		f = open('output.txt', 'r')<br>
 		lines = f.readlines()<br><br>
 
-		for line in Lines:<br>
+		for line in lines:<br>
 			&emsp;&emsp;for i in range(0x00,0xff):<br>
 				&emsp;&emsp;&emsp;result = ''<br>
 				&emsp;&emsp;&emsp;cipher = binascii.unhexlify(line.strip())<br>
