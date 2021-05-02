@@ -28,8 +28,8 @@ After reading the information for each layer of the model, we will be able to an
     </li>
     <li style="margin-top: 1rem">
      <i><b>Which layer checks received packets to make sure that they haven't been corrupted?</b></i><br>
-	Data Link layer is the last layer before data gets transmitted through a cable and the first after. Isn't this the best time to check if something went wrong while data was 
-	travelling across the network? That's why data linky <i>"serves an important function when it receives data, 
+	Data Link layer is the last layer before data gets transmitted through a cable and the first after received. Isn't this the best time to check if something went wrong while data was 
+	travelling across the network? That's why data link <i>"serves an important function when it receives data, 
 	as it checks the received information to make sure that it hasn't been corrupted during transmission"</i>. Correct answer: 2.
     </li>
     <li style="margin-top: 1rem">
@@ -46,7 +46,7 @@ After reading the information for each layer of the model, we will be able to an
     </li>
     <li style="margin-top: 1rem">
      <i><b>Which layer tracks communications between the host and receiving computers?</b></i><br>
-	If I wanted to communicate via a video call, in the OSI language I would try to <u>establish a session</u>. You got it, the right answer is 5,
+	If I wanted to communicate with another computer, in the OSI language I would try to <u>establish a session</u>. You got it, the right answer is 5,
 	the Session layer.
     </li>
     <li style="margin-top: 1rem">
@@ -69,7 +69,7 @@ After reading the information for each layer of the model, we will be able to an
     </li>
     <li style="margin-top: 1rem">
      <i><b>Which transport layer protocol would be best suited to transmit a live video?</b></i><br>
-	I remember a nice meme about Skype and how the most time of a video call is like "Can you hear me?". A protocol that can ensure data loss but, it's ok, we care mostly
+	I remember a nice meme about Skype and how most of the time of a video call is like "Can you hear me?". A protocol that can ensure data loss but, it's ok, we care mostly
 	for the speed. It's the UDP.
     </li>
   </ul>
