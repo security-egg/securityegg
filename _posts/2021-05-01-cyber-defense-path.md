@@ -2,7 +2,7 @@
 layout: post
 title: "TryHackMe: Cyber Defense Learning Path P1D1"
 date: 2021-05-01
-categories: challenges
+categories: tryhackme
 ---
 
 One of the reasons I like TryHackMe so much, and maybe the main reason, is the Learning Paths it offers. Right now, there are 5 learning paths with different number
