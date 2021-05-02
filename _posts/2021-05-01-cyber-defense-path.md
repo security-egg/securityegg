@@ -5,7 +5,7 @@ date: 2021-05-01
 categories: challenges
 ---
 
-One of the reasons I like TryHackMe so musch, and maybe the main reason, is the Learning Paths it offers. Right now, there are 5 learning paths with different number
+One of the reasons I like TryHackMe so much, and maybe the main reason, is the Learning Paths it offers. Right now, there are 5 learning paths with different number
 of rooms, each one. Cyber Defense is the one with the most rooms, 38, and it claims that 48 hours are needed to be completed. A lot of knowledge waits in there to be
 acquired so... lets start with the first part.
 
