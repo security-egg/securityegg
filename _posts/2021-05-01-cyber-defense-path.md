@@ -28,7 +28,7 @@ After reading the information for each layer of the model, we will be able to an
     </li>
     <li style="margin-top: 1rem">
      <i><b>Which layer checks received packets to make sure that they haven't been corrupted?</b></i><br>
-	Data Link layer is the last layer before data gets transmitted through a cable and the first after received. Isn't this the best time to check if something went wrong while data was 
+	Data Link layer is the last layer before data gets transmitted through a cable and the first after received. Isn't this the best time to check if something went wrong while data were 
 	travelling across the network? That's why data link <i>"serves an important function when it receives data, 
 	as it checks the received information to make sure that it hasn't been corrupted during transmission"</i>. Correct answer: 2.
     </li>
@@ -105,7 +105,7 @@ Networking family time! We get to meet with OSI's predecessor, the TCP/IP model.
   <ul style="margin-top: 2rem">
     <li style="margin-top: 1rem">
      <i><b>Which model was introduced first, OSI or TCP/IP?</b></i><br>
-	A lot simpler than the 0SI model, TCP/IP was introduced some years before.
+	    A lot simpler than the 0SI model, <u>TCP/IP</u> was introduced some years before.
     </li>
     <li style="margin-top: 1rem">
      <i><b>Which layer of the TCP/IP model covers the functionality of the Transport layer of the OSI model (Full Name)?</b></i><br>
@@ -121,11 +121,11 @@ Networking family time! We get to meet with OSI's predecessor, the TCP/IP model.
     </li>
     <li style="margin-top: 1rem">
      <i><b>Which layer of the TCP/IP model handles the functionality of the OSI network layer?</b></i><br>
-	Keep staying focused, in TPC/IP model the network layers is called Internet.
+	Keep staying focused, in TPC/IP model the network layer is called Internet.
     </li>
     <li style="margin-top: 1rem">
      <i><b>What kind of protocol is TCP?</b></i><br>
-	I hope you didn't miss the picture that describes the TCP 3-Way Handshake Process. One of my favorite things about TPC, it's Connection-based. Do you remember the Skype meme?
+	I hope you didn't miss the picture that describes the TCP 3-Way Handshake Process. One of my favorite things about TCP, it's <u>Connection-based</u>. Do you remember the Skype meme?
     </li>
     <li style="margin-top: 1rem">
      <i><b>What is SYN short for?</b></i><br>
@@ -157,7 +157,7 @@ We are about to get our hands dirty with one of the most, or probably THE most, 
     </li>
     <li style="margin-top: 1rem">
      <i><b>What switch would allow you to restrict requests to IPv4?</b></i><br>
-	You're looking only for IPV4 addresses? Try -4.
+	Are you looking only for IPV4 addresses? Try -4.
     </li>
     <li style="margin-top: 1rem">
      <i><b>What switch would give you a more verbose output?</b></i><br>
@@ -217,7 +217,7 @@ One more interesting tool. We have some reading to do here but, believe me, <u>i
     </li>
     <li style="margin-top: 1rem">
      <i><b>What type of DNS server contains records specific to domain extensions (i.e. .com, .co.uk*, etc)*? Use the long version of the name.</b></i><br>
-	Besides .com and .org there are a lot of other extenstions that could conclude a domain. Thus, every <u>Top-Level Domain</u> server handles only specific extensions.
+	Besides .com and .org, there are a lot of other extensions that could conclude a domain. Thus, every <u>Top-Level Domain</u> server handles only specific extensions.
     </li>
     <li style="margin-top: 1rem">
      <i><b>Where is the very first place your computer would look to find the IP address of a domain?</b></i><br>
@@ -229,7 +229,7 @@ One more interesting tool. We have some reading to do here but, believe me, <u>i
     </li>
     <li style="margin-top: 1rem">
      <i><b>If a DNS query has a TTL of 24 hours, what number would the dig query show?</b></i><br>
-	The networking time passess fast. Time To Live is measured in seconds, so you just have to compute 3600 x 24 = 86400.
+	Networking time passess fast. Time To Live is measured in seconds, so you just have to compute 3600 x 24 = 86400.
     </li>
   </ul>
 </p>
