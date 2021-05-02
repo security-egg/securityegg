@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "TryHackMe: Cyber Defense Learning Path P1D2"
-date: 2021-05-01
+date: 2021-05-02
 categories: tryhackme
 ---
 
