@@ -6,7 +6,7 @@ categories: tryhackme
 ---
 
 We could say that, network traffic and Wireshark are getting along as much as crêpes with chocolate and strawberries ( I will accept no argument on that). Often in forensic challenges you 
-will have to analyze a .pcap file. Wireshark is the tool you need. It will present you a nice overview of packets transmitted, categorized by protocol, time, source and and destination 
+will have to analyze a .pcap file. Wireshark is the tool you need. It will present you a nice overview of packets transmitted, categorized by protocol, time, source and destination 
 address and that's not all. Wireshark provides, as well, a number of filters you may use in order to preview the results of a capture in your own, customized way. Are you ready to dive 
 deeper?<br>
 Today, I'm gonna skip to Task 7. The previous tasks have a bunch of usefull informations about the tool, giving us the heads-up we need. For the rest tasks, we will have to download the 
@@ -60,7 +60,7 @@ The already called (by me) Savior, DNS can make it's own traffic trail. I refere
   <ul style="margin-top: 2rem">
     <li style="margin-top: 1rem">
      <i><b>What is being queried in packet 1?</b></i><br>
-	You have to check the field Queries after the Domain Name System tab. The answer is 8.8.8.8.in-addr.arpa.
+	You have to check the field Queries after the Domain Name System tab. The answer is 8.8.8.8.in-addr.arpa
     </li>
     <li style="margin-top: 1rem">
      <i><b>What site is being queried in packet 26?</b></i><br>
@@ -97,7 +97,7 @@ A familiar protocol, isn't it? Hypertext Transfer Protocol is the layer's 7 prot
     </li>
   </ul>
 <h5><b>Task 12</b></h5>
-Same with HTTP but Secure, HTTPS keeps protects your data by encrypting them. Note: If you can't find the SSL protocol you have to select the TLS > RSA keys list > Edit. Google why.
+Same with HTTP but Secure, HTTPS protects your data by encrypting them. Note: If you can't find the SSL protocol you have to select the TLS > RSA keys list > Edit. Google why.
   <ul style="margin-top: 2rem">
     <li style="margin-top: 1rem">
      <i><b>Looking at the data stream what is the full request URI for packet 31?</b></i><br>
