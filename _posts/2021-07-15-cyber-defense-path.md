@@ -36,6 +36,7 @@ Deploy the machine and a Windows Server will appear at the right(give it some ti
 	You are looking for smthing like Get-...User, an option and pipe that to filter the results (ok, now check the hint if you want to, I did).
     </li>
 </ul>
+</p>
 </article>
 
 That was all with the Windows rooms and the first part. Hooray! Our Cyber Defense path journey started cool and easy. Personally, I want to learn more!
