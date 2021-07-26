@@ -13,7 +13,7 @@ you with its foothold. The challenges you will find are mostly of the stego and 
 <h5><b>Task 1: Introduction</b></h5>
 <p style="margin-top: 2rem">
 We start with the usual enumeration.<br>
-<img src="/securityegg/assets/images/tryhackme/biohazard/nmap_enum.jpg" alt="#" style="margin-top: 2%; max-width: 100%">
+<img src="/securityegg/assets/images/tryhackme/biohazard/nmap_enum.jpg" alt="#" style="margin-top: 2%; max-width: 100%"><br>
 From the nmap scan we can see that there are 3 open ports, the usual 22 with an ssh service and the 80 with an apache service running on them. There is also a ftp service running on port 21. Moving foward, we can check the webpage from the browser.<br>
 Read the (nostalgic for those who know the story of RE 1) note and click on the mansion... If you dare :D.
 </p>
@@ -53,7 +53,7 @@ Combine the outputs to one string and decode it with base64. You will get the ft
 <h5><b>Task 3: The guard house</b></h5>
 <p style="margin-top: 2rem">
 We escaped the mansion but the terror has not ended. We need more keys to get ourselves free from this horror. Luckily, on the ftp server we can find enough of them (xD).<br>
-<img src="/securityegg/assets/images/tryhackme/biohazard/ftp.jpg alt="#" style="margin-top: 2%; max-width: 100%">
+<img src="/securityegg/assets/images/tryhackme/biohazard/ftp.jpg" alt="#" style="margin-top: 2%; max-width: 100%"><br>
 Everything seems interesting so, let's get them all. Starting with the important.txt, we find another hidden room, the /hidden_closet. Barry references that the helmet key is needed and, also, that it is encrypted and he has no clue on how to solve it. We can check it out and help Barry.<br>
 The key is inside the helmet_key.txt.gpg, which can't be encrypted without the passphrase. There are 3 key pictures that could be very helpful. They seem a little...stegoed?<br>
 For the first, try steghide and you will get a .txt.
@@ -71,10 +71,10 @@ Return to the Mansion and navigate to the /studyRoom. If you remember, the room 
 <h5><b>Task 5: Underground laboratory</b></h5>
 <p style="margin-top: 2rem">
 In the last task we find a hidden, underground laboratory (oh, no, they make zombies here). As an umbrella guest, we find a curious hidden dir.<br>
-<img src="/securityegg/assets/images/tryhackme/biohazard/ssh.jpg alt="#" style="margin-top: 2%; max-width: 100%">
+<img src="/securityegg/assets/images/tryhackme/biohazard/ssh.jpg" alt="#" style="margin-top: 2%; max-width: 100%"><br>
 Go to .jailcell to find chris.txt. And Chris, as well...<br>
 Previously, we brute forced the Vigenere ciphertext inside the MO disk and found out Weasker's password. Now it's time to put it on test. Change user to weasker, give the password, check the permissions and get the root flag from the /root dir.<br>
-<img src="/securityegg/assets/images/tryhackme/biohazard/ssh.jpg alt="#" style="margin-top: 2%; max-width: 100%"> 
+<img src="/securityegg/assets/images/tryhackme/biohazard/weasker.jpg" alt="#" style="margin-top: 2%; max-width: 100%"><br> 
 And then run. Fast. Cause Weasker will possibly transform into a Tyrant. You never know.
 </p>
 </article>
