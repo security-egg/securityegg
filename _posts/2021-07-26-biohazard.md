@@ -47,7 +47,7 @@ crest3: base64 -> binary -> hex
 <li>
 crest4: base58 -> hex
 </li>
-<ul>
+</ul>
 Combine the outputs to one string and decode it with base64. You will get the ftp username and password.
 </p>
 <h5><b>Task 3: The guard house</b></h5>
@@ -77,3 +77,4 @@ Previously, we brute forced the Vigenere ciphertext inside the MO disk and found
 <img src="/securityegg/assets/images/tryhackme/biohazard/weasker.jpg" alt="#" style="margin-top: 2%; max-width: 100%"><br> 
 And then run. Fast. Cause Weasker will possibly transform into a Tyrant. You never know.
 </p>
+</article>
