@@ -77,4 +77,3 @@ Previously, we brute forced the Vigenere ciphertext inside the MO disk and found
 <img src="/securityegg/assets/images/tryhackme/biohazard/weasker.jpg" alt="#" style="margin-top: 2%; max-width: 100%"><br> 
 And then run. Fast. Cause Weasker will possibly transform into a Tyrant. You never know.
 </p>
-</article>
