@@ -13,7 +13,7 @@ you with its foothold. The challenges you will find are mostly of the stego and 
 <h5><b>Task 1: Introduction</b></h5>
 <p style="margin-top: 2rem">
 We start with the usual enumeration.<br>
-<img src="/securityegg/assets/images/tryhackme/biohazard/nmap_enum.jpg alt="#" style="margin-top: 2%; max-width: 100%">
+<img src="/securityegg/assets/images/tryhackme/biohazard/nmap_enum.jpg" alt="#" style="margin-top: 2%; max-width: 100%">
 From the nmap scan we can see that there are 3 open ports, the usual 22 with an ssh service and the 80 with an apache service running on them. There is also a ftp service running on port 21. Moving foward, we can check the webpage from the browser.<br>
 Read the (nostalgic for those who know the story of RE 1) note and click on the mansion... If you dare :D.
 </p>
