@@ -34,10 +34,10 @@ Hello there, this is a write-up for a TryHackMe room that I found quite interest
 		<img src="/securityegg/assets/images/tryhackme/masterminds/brim11.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 		Closing with this task, you can now search for trojan that infected the machine.
 	</p>
-	<h5><b>[Infection 2]</b></h5>
+	<h5><b>[Infection 3]</b></h5>
 	<p style="margin-top: 2rem">
 		One more machine got infected. This will be a long day xD. You know what to do for the first question.<br>
-		Moving on, we are looking for 3 (yes!) C2 domains (btw, the Wikipedia entry for a C2 domain is not cybersecurity relative, search for Command and Control 8-)). To answer this question I had to form a query. But, I wasn't aware of Brims query language and it took me some time to get what I wanted. I suggest you two articles that helped me, <a url='https://medium.com/brim-securitys-knowledge-funnel/five-elegant-brim-queries-to-threat-hunt-in-zeek-logs-and-packet-captures-30eec4c09933'> the first</a> and <a url='https://medium.com/brim-securitys-knowledge-funnel/investigating-network-traffic-activity-using-brim-and-zeek-97efdf725f8e'>the second</a>. So, again filtering out for an exe, I got these entries. The IP addresses are also visible.
+		Moving on, we are looking for 3 (yes!) C2 domains (btw, the Wikipedia entry for a C2 domain is not cybersecurity relative, search for Command and Control 8-)). To answer this question I had to form a query. But, I wasn't aware of Brims query language and it took me some time to get what I wanted. I suggest you two articles that helped me, <a href='https://medium.com/brim-securitys-knowledge-funnel/five-elegant-brim-queries-to-threat-hunt-in-zeek-logs-and-packet-captures-30eec4c09933'> the first</a> and <a href='https://medium.com/brim-securitys-knowledge-funnel/investigating-network-traffic-activity-using-brim-and-zeek-97efdf725f8e'>the second</a>. So, again filtering out for an exe, I got these entries. The IP addresses are also visible.
 		<img src="/securityegg/assets/images/tryhackme/masterminds/brim12.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 		Unique DNS queries once more. This time we need only those that were made to the first IP address we found for the previous question.
 		<img src="/securityegg/assets/images/tryhackme/masterminds/brim13.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
