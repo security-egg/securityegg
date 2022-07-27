@@ -21,7 +21,7 @@ Long time no see and I return with a CTF write-up U+1F973. The one I'm talking a
 	Looking a bit lower, you can see a post where the_mayor thanks the people that congratulated for his <i>50th</i> birthday. It was posted on <i>24-jan-2022</i>. And now the part I didn't pay notice to, at first, and I was wondering what is going on. The word yesterday (attention: you can place your facepalm here).<br>
 	<img src="assets/images/ctfs/hacky_holidays/mayor's_blog/2_reset.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 	OK, we have everything we need, we hit the reset button and hope it works.<br>
-	<img src="assets/images/ctfs/hacky_holidays/mayor's_blog/2_flag.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/2_flag.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 	This is the flag. What a satisfaction.
 	<h5>Task 3: Escalate to Administrative Privileges</h5>
 	<i>It looks like the design of the authentication system is very flawed. Find out how users are authenticated and exploit the system to gain Administrator rights.</i><br>
