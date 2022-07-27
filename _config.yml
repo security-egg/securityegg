@@ -29,6 +29,7 @@ email: tkavalierou@gmail.com
 # Build settings
 plugins:
   - jekyll-feed
+future: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
