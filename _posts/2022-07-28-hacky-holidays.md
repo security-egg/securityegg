@@ -5,11 +5,11 @@ date: 2022-07-28
 categories: ctfs
 ---
 
-Long time no see and I return with a CTF write-up U+1F973. The one I'm talking about is the Hacky Holidays - Unlock the City, hosted by hackazon, which lasted from 08/07/2022 to 26/07/2022. It released challenges in 4 phases, many many challenges, but, I didnt have the inspiration to get bothered with a CTF before, I believe, the 21st of July.<br>So, I just solved some beginner and easy level challenges, still, I got a taste of many more, as long as failed to see a clear path to the solution of most of them. Which means that, one more post about this CTF will follow, this time with the mistakes I did and led me away from my dearest flags xD.
+Long time no see and I return with a CTF write-up. The one I'm talking about is the Hacky Holidays - Unlock the City, hosted by hackazon, which lasted from 08/07/2022 to 26/07/2022. It released challenges in 4 phases, many many challenges, but, I didnt have the inspiration to get bothered with a CTF before, I believe, the 21st of July.<br>So, I just solved some beginner and easy level challenges, still, I got a taste of many more, as long as failed to see a clear path to the solution of most of them. Which means that, one more post about this CTF will follow, this time with the mistakes I did and led me away from my dearest flags xD.
 
 <article>
 	<h3><b>Mayor's Blog | Web | Beginner</b></h3>
-	This challenge consisted of 5 parts. The first part was about finding a secret flag, somewhere hidden in the website. I am proud to confess that... I couldn't find it. I don't know why, I don't know where they hid it, I just couldn't find it and skipped right to the next part U+1FAE0.
+	This challenge consisted of 5 parts. The first part was about finding a secret flag, somewhere hidden in the website. I am proud to confess that... I couldn't find it. I don't know why, I don't know where they hid it, I just couldn't find it and skipped right to the next part.
 	<h5>Task 2: Get Access to an Editor Account</h5>
 	<i>Try to exploit the password resetting functionality to gain access to an account</i><br>
 	Indeed, there is a "Forgot Password" functionality. Which I forgot to get a screenshot for. But let's continue, just have faith to my description. The website was hosting the Mayor's Blog. There were two posts from the mayor, a paragraph laughing at the mayor about the bad security mechanisms and a "Click here to login" button. The button led to a login page with the reset password option.<br>
@@ -47,7 +47,7 @@ Long time no see and I return with a CTF write-up U+1F973. The one I'm talking a
 	<i>Find a vulnerability in the developer console and use it to access a password file.</i><br>
 	For this task I didn't manage to find the flag. But, here's what I have.
 	<img src="assets/images/ctfs/hacky_holidays/mayor's_blog/5_pass_shad.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
-	I tried some combinations of piping and merging commands with the ';' operator, but it was way easier. With the cat command we could traverse back from the current path to any other. That didn't work with the ls command. I managed to retrieve the shadow and passwd files from the server file system, but I couldn't break them with john. And I tried. So many times U+1F979. Maybe the answer was something else, or I didn't set john right, anyways, here's the vulnerability, or a vulnerability.
+	I tried some combinations of piping and merging commands with the ';' operator, but it was way easier. With the cat command we could traverse back from the current path to any other. That didn't work with the ls command. I managed to retrieve the shadow and passwd files from the server file system, but I couldn't break them with john. And I tried. So many times. Maybe the answer was something else, or I didn't set john right, anyways, here's the vulnerability, or a vulnerability.
 </article><br><br>
 <article>
 <h3><b>You Can't See Me | Network, ICS | Easy</b></h3>
