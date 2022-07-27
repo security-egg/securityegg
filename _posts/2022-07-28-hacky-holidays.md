@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Hacky Holidays - Unlock the City 2022""
-date: 2022-07-28
+title: "Hacky Holidays 2022"
+date: 2021-04-28
 categories: ctfs
 ---
 
