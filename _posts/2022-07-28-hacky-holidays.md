@@ -5,12 +5,12 @@ date: 2022-07-28
 categories: ctfs
 ---
 
-Long time no see and I return with a CTF write-up U+1F973. The one I'm talking about is the Hacky Holidays - Unlock the City, hosted by hackazon, which lasted from 08/07/2022 to 26/07/2022. It released challenges in 4 phases, many many challenges, but, I didnt have the inspiration to get bothered with a CTF before, I believe, the 21st of July.<br>So, I just solved some beginner and easy level challenges, still, I got a taste of many more, as long as failed to see a clear path to the solution of most of them. Which means that, one more post about this CTF will follow, this time with the mistakes I did and led me away from my dearest flags xD.
+Long time no see and I return with a CTF write-up. The one I'm talking about is the Hacky Holidays - Unlock the City, hosted by hackazon, which lasted from 08/07/2022 to 26/07/2022. It released challenges in 4 phases, many many challenges, but, I didnt have the inspiration to get bothered with a CTF before, I believe, the 21st of July.<br>So, I just solved some beginner and easy level challenges, still, I got a taste of many more, as long as failed to see a clear path to the solution of most of them. Which means that, one more post about this CTF will follow, this time with the mistakes I did and led me away from my dearest flags xD.
 
 <article>
-	<h3><b>Mayor's Blog | Web | Beginner</b></h3>
-	This challenge consisted of 5 parts. The first part was about finding a secret flag, somewhere hidden in the website. I am proud to confess that... I couldn't find it. I don't know why, I don't know where they hid it, I just couldn't find it and skipped right to the next part U+1FAE0.
-	<h5>Task 2: Get Access to an Editor Account</h5>
+	<h3><b>Mayor's Blog | Web | Beginner</b></h3><br>
+	This challenge consisted of 5 parts. The first part was about finding a secret flag, somewhere hidden in the website. I am proud to confess that... I couldn't find it. I don't know why, I don't know where they hid it, I just couldn't find it and skipped right to the next part.<br><br>
+	<h5>Task 2: Get Access to an Editor Account</h5><br>
 	<i>Try to exploit the password resetting functionality to gain access to an account</i><br>
 	Indeed, there is a "Forgot Password" functionality. Which I forgot to get a screenshot for. But let's continue, just have faith to my description. The website was hosting the Mayor's Blog. There were two posts from the mayor, a paragraph laughing at the mayor about the bad security mechanisms and a "Click here to login" button. The button led to a login page with the reset password option.<br>
 	What's intresting, in order to reset a password we've been asked to answer to two security questions. This weakness leads to an attack vector including <u>social engineering</u>, which I find a pretty good idea, as it is a very realistic approach.<br>
@@ -22,16 +22,16 @@ Long time no see and I return with a CTF write-up U+1F973. The one I'm talking a
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/2_reset.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 	OK, we have everything we need, we hit the reset button and hope it works.<br>
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/2_flag.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
-	This is the flag. What a satisfaction.
+	This is the flag. What a satisfaction.<br><br>
 	<h5>Task 3: Escalate to Administrative Privileges</h5>
 	<i>It looks like the design of the authentication system is very flawed. Find out how users are authenticated and exploit the system to gain Administrator rights.</i><br>
 	Check what the task asks one more time. <u>Find out how users are authenticated</u>. It is time to intercept the login request with Burp.<br>
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/3_admin_marked.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
-	Pretty clear, the cookie can be read as plain text and there is a field about the admin privileges of the logged in account. Which can be edited. To Admin. True. Kudos to the Mayor's Blog sysadmin (spoiler alert for the next task??).
+	Pretty clear, the cookie can be read as plain text and there is a field about the admin privileges of the logged in account. Which can be edited. To Admin. True. Kudos to the Mayor's Blog sysadmin (spoiler alert for the next task??).<br>
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/3_logged_as_admin_marked.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 	And this is the story of how I became Administrator of the Mayor's blog. Oh, cool, I can even see some nginx logs from here.<br>
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/3_flag.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
-	And a flag?<br>
+	And a flag?<br><br>
 	<h5>Task 4: Gain Access to the Developer Console</h5>
 	<i>There is a special console for administrators on the website, but the link is hidden. Find the link, and gain relevant information from the logs. In the end, use the console to find user information.</i><br>
 	So, what happened here is that, the sysadmin thought,<i> "I have a shell with admin privileges stored in here, just in case I will need it??, but I don't want to be crawled, I need to hide it. Let's add it to a robots.txt"</i>.<br>
@@ -43,12 +43,56 @@ Long time no see and I return with a CTF write-up U+1F973. The one I'm talking a
 	Climbing to the top of this blog. Do you believe that now I gained access to the admin_shell?<br>
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/4_flag.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 	With ls and cat. Making my life simple.<br>
-	<h5>Task 5: Crack the Password of the Admin Account on the Server</h5>
+	<h5>Task 5: Crack the Password of the Admin Account on the Server</h5><br><br>
 	<i>Find a vulnerability in the developer console and use it to access a password file.</i><br>
-	For this task I didn't manage to find the flag. But, here's what I have.
+	For this task I didn't manage to find the flag. But, here's what I have.<br>
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/mayor's_blog/5_pass_shad.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
-	I tried some combinations of piping and merging commands with the ';' operator, but it was way easier. With the cat command we could traverse back from the current path to any other. That didn't work with the ls command. I managed to retrieve the shadow and passwd files from the server file system, but I couldn't break them with john. And I tried. So many times U+1F979. Maybe the answer was something else, or I didn't set john right, anyways, here's the vulnerability, or a vulnerability.
+	I tried some combinations of piping and merging commands with the ';' operator, but it was way easier. With the cat command we could traverse back from the current path to any other. That didn't work with the ls command. I managed to retrieve the shadow and passwd files from the server file system, but I couldn't break them with john. And I tried. So many times. Maybe the answer was something else, or I didn't set john right, anyways, here's the vulnerability, or a vulnerability.
 </article><br><br>
 <article>
-<h3><b>You Can't See Me | Network, ICS | Easy</b></h3>
+<h3><b>You Can't See Me | Network, ICS | Easy</b></h3><br>
+	Moving on, we have a network forensics challenge, with two captures for us.<br><br>
+	<h5>Task 1: Parts Make a Whole</h5><br>
+	<i>The file shows communication between a PLC and an ICS workstation. Analyze the file to get the flag!{use modbus.pcapng)</i><br>
+	I'm always starting a pcap analysis by checking the Protocol Hierarchy tab. You can find it under Statistics. Why? Because, realistically, network captures are long and consist of packets comming from many sources (check the Endpoints tab for that), under different layers and protocols. Most of them are part of a legitimate traffic, so if you just keep scrolling the traffic to find a trace of the attack, you're just looking for a needle in the haystack. We need to clear a path through that and understand what is going on this network, what is supposed to be common and what behavior seems deviant.<br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/modbus_protocols.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	So, what to keep from this screenshot. We see traffic only under the TCP, which includes HTTP traffic, with data, and Modbus/TCP traffic. We know that we need to clarify the communication between <u>a PLC and an ICS workstation</u> so, the Modbus traffic is expected. We need to examine these two protocols and, to be honest, Modbus seems way appealing to me. Let's start from there.<br>
+	By searching online, I found a nice <a href="https://www.sans.org/posters/modbus-rtu-tcp/">cheatsheet</a>, with very helpful tshark commands, from SANS. Keep that in mind, as it also applies on the Chemical Plant challenge. For this one, as we are looking for a communication between two components, we can filter out the communications.<br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/1_concs.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	The one with the highest number of frames is the one pointed out. A lot of frames. Notice also that the one with the IPv4 '192.168.198.138' also communicates with 3 external IPs. We will see about that later on. For now, let's check out what this two component-pals had to say. I returned to the wireshark and filtered out the first IP, as source just to lower the number of packets, and added the data field to my filter.<br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/1_filter.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	You don't see the whole traffic but, believe me, every packet was of length either 115 or 68. You can also see, in the info, that they are 'acknowledge' packets, of the sequences 1,13. But that's another story, about how the TCP works. Lets just open one of the 115-length packets to see what is hidding.<br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/1_sol.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	Do you also see a flag in there?<br>
+	<h5>Task 3: Man in the Middle</h5><br>
+	<i>What is the protocol used in the Man-in-the-Middle attack performed by the rogue ICS component in this network?(use network.pcapng)</i></br>
+	Don't lose your faith in me, if you have any xD. I solved every part of the challenge, I just prefer to present the 3d part before the 2nd, and I believe you will see why. I will break the task in parts, just to see how many information we can get, just from the description.<br>
+	<u>What is the protocol used in the Man-in-the-Middle attack</u>. We are looking for a protocol, which is also the answer in the format CTF{protocol_in_capital_letters}, which was abused in order to achieve a Man-in-the-Middle attack. That demystifies a lot, as we know the type of the attack and, also, it is one pretty common and documented. For an ICS enviroment communicating with Modbus, I found a <a href="https://dispel.io/blog/mitre-att-ck-for-ics-external-remote-services/">nice article</a> covering the MITTRE ATT&CK vector of the Man-in-the-Middle attack we expect to see.</br>
+	<u>performed by the rogue ICS component</u>. Please, hold on that in order to understand why I prefer this task order. We are looking for a rogue component, compromised by a mitm attack. And, from the aforementioned article, we know that this attack is an ARP poisoning.<br>
+	How can we find traffic indicating ARP poisoning? Well, the protocol hierarchy is there to help us again.<br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/network_protocols.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	Now we have TCP as long as UDP traffic. We will check about that later because, we know care for the ARP traffic. Filtering that out, it is still too much to process. We need to filter it more. We need to think how the ARP poisoning works. Welp, you can google it that and find dozens of sources. I will just get to the point. We are looking for a IP address mached with the same MAC address. A <a href="https://www.oreilly.com/library/view/packet-analysis-with/9781785887819/ch07s04.html">short post</a> I found for this points out the filter we can use to check for that information. One step away from the solution?<br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/2sol_marked.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	That's evidence of an ARP spoofing attack and, also, the solution for the second task.<br>
+	<h5>Task 2: WHOAMI</h5><br>
+	<i>There seems to be some suspicious activity in the network. Can you identify the IP address of the rogue ICS component?(use network.pcapng)</i></br>
+	Yes, we can identify the IP address because, we saw before, from the modbus.pcap, that the IP 192.168.198.138 is the one that shares the same MAC address, how suspicious, with another endpoint and, also, it communicates with external IP addresses. Which not only seems suspicious, but can be proved extremely harmful.<br>
+	<h5>Task 4: Follow Me Till the End</h5><br>
+	<i>The rogue component is communicating with an external entity, which is a big red flag in ICS enviroments. Can you find the flag from the network data?(use network.pcapng)</i></br>
+	Now I can brag about proving my point xD. Skip that, act like you never saw it.<br>
+	What we are looking for now. 1. Communication between the rogue component and an external entity. 2. Network data. Return back to the protocols of this capture. We can clearly see data transfered but, not under the HTTP layer. Just to check what's going on with the http traffic, I filtered it out. Besides the certificate packets, I found one GET request from our rogue component, with source the '192.168.198.138' and destination the '35.232.111.17', but it came with a '204 No Content' response. Nothing of interest here. However, I can see another protocol which is used to establish remote communication and, actually, a remote-control communication.<br>
+	Filtering the VNC traffic, there are is a packet of 3947 length. I follow the tcp stream and get this.
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/4_packet.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	Quite interesting. So now, I wonder, what will happen if i get the data from the img tag out, decode it from base64, as it is suggested from the src, and save it as a png file?</br>
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/4_flag.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	As you see, it was easy. And such an enjoyment.
+</article><br><br>
+<article>
+<h3><b>Audible Transmission | Stego | Easy</b></h3><br>
+From that challenge, I just got the first, really easy, part. I'm just showing it for the fun, nothing difficult here.
+<h5>Task For Your Eyes Only: Follow Me Till the End</h5><br>
+<i>Are you able to see what was being sent</i><br>
+	So, we get a wav file, with a secret message in it. It is stego, so we are taking the usual path, blah blah, I just opened a Sonic Visualizer and added a spectrogram to get this.
+	<img src="/securityegg/assets/images/ctfs/hacky_holidays/transmission/1sol.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
+	After that, I completelly skipped (forgot?) the next task of this challenge, as I took my time with two other challenges. Where is that shame gif?<br>
 </article>
