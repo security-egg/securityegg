@@ -3,7 +3,7 @@ layout: default
 title: About
 permalink: /about
 sitemap:
-	exclude: 'yes'
+  exclude: 'yes'
 ---
 
 <article style = "margin: 10%">
