@@ -3,6 +3,8 @@ layout: post
 title:  "My first post!"
 date:   2021-04-26
 categories: random
+sitemap:
+  exclude: 'yes'
 ---
 
 Hello to everyone out there, <br>
