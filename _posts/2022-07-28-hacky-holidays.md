@@ -75,7 +75,7 @@ Long time no see and I return with a CTF write-up. The one I'm talking about is 
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/2sol_marked.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br><br>
 	That's evidence of an ARP spoofing attack we've been looking for.<br><br>
 	<h5>Task 2: WHOAMI</h5><br>
-	<i>There seems to be some suspicious activity in the network. Can you identify the IP address of the rogue ICS component?(use network.pcapng)</i></br>
+	<i>There seems to be some suspicious activity in the network. Can you identify the IP address of the rogue ICS component?(use network.pcapng)</i><br>
 	Consider the path of the attack. We saw Modbus traffic from the '.138'. Also, the same IPv4 endpoint was detected spoofing its MAC address. We don't expect our attacker to stay there and not expand to the rest of the network, right?. Why not check the rest of the conversations the '.138' had in the network capture?
 	<img src="/securityegg/assets/images/ctfs/hacky_holidays/cant_see/2_convs.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br><br>
 	This is the Conversations tab, again under Statistics. As you can see, the '.138' made the underlined conversations. We know, and examined, from the first task about the communications over Modbus/TCP. That leaves us with the '.128' IP address. Which, who would have though, makes traffic with a number of external IPs.<br> 
