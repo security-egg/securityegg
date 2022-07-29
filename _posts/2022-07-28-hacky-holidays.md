@@ -9,7 +9,7 @@ Long time no see and I return with a CTF write-up. The one I'm talking about is 
 
 <article>
 	<h3><b>Mayor's Blog | Web | Beginner</b></h3><br>
-	This challenge consisted of 5 parts. The first part was about finding a secret flag, somewhere hidden in the website. I am proud to confess that... I couldn't find it. I don't know why, I don't know where they hid it, I just couldn't find it and skipped right to the next part.<br><br>
+	This challenge consisted of 5 parts. The first part was about finding a secret flag, somewhere hidden in the website. I am proud to confess that... I couldn't find it. I don't know why, I don't know where the Mayor hid it, I just couldn't find it and skipped right to the next part.<br><br>
 	<h5>Task 2: Get Access to an Editor Account</h5><br>
 	<i>Try to exploit the password resetting functionality to gain access to an account</i><br>
 	Indeed, there is a "Forgot Password" functionality. Which I forgot to get a screenshot for. But let's continue, just have faith to my description. The website was hosting the Mayor's Blog. There were two posts from the mayor, a paragraph laughing at the mayor about the bad security mechanisms and a "Click here to login" button. The button led to a login page with the reset password option.<br>
