@@ -5,7 +5,7 @@ date: 2022-07-29
 categories: cyberdefenders
 ---
 
-Moving on to the blue side, under the Cyberdefenders category I will add some write-ups from the Cyberdefenders' challenges. The first one I have for you is the 'GrabThePhisher'. Lets read the description.<br>
+Moving on to the blue side, under the Cyberdefenders category I will add some writeups from the Cyberdefenders' challenges. The first one I have for you is the 'GrabThePhisher'. Lets read the description.<br>
 <i>An attacker compromised a server and impersonated hxxps://pancakeswap.finance/, a decentralized exchange native to BNB Chain, to host a phishing kit at hxxps://apankewk[.]soup[.]xyz/mainpage.php. The attacker set it as an open directory with the file name "pankewk.zip".Provided the phishing kit, you are requested to analyze it and do your threat intel homework.</i><br>
 
 So, we have an attacker which compromised a server. A phishing kit, somewhere hidden in the downloadable challenge, we'll get to this. And, we are asked to perform some threat intel on it. Time to make a dive.<br><br>
