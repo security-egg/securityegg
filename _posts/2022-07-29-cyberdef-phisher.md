@@ -49,7 +49,7 @@ We also know the id.<br>
 There is one part of the code we didn't pay attention yet. It's just a comment, a small gift the phisher gave to us. Why? To mock us? We will prove better.<br>
 <img src="/securityegg/assets/images/cyberdefenders/phisher/10_allies.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 <h5>Question 11: What is the full name of the Phish Actor?</h5><br>
-You see, our attacker had the attitude to leave a, propably, personal information behind. Don't expect to get anything from that because, clearly, that phisher knew that, leaving a trace like that would make no harm. But, the trace that can finally lead the path towards discovering the attacker is the chat where the seeds get dumped. Lets recreate it, with a hello message this time just to laugh back.<br>
+You see, our attacker had the attitude to leave a, propably, personal information behind. Don't expect to get anything from that because, clearly, the phisher knew that, leaving such a trace would make no harm. But, the trace that can finally lead the path towards discovering the attacker is the chat where the seeds get dumped. Lets recreate it, with a hello message this time just to laugh back.<br>
 <img src="/securityegg/assets/images/cyberdefenders/phisher/recreate_link.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 Everything in place and we only need to try this.<br>
 <img src="/securityegg/assets/images/cyberdefenders/phisher/11_12_answers.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
