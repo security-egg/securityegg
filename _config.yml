@@ -22,9 +22,8 @@ title: security.egg
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "securityegg" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin_username: thaleia-elpis-kavalierou-9235ba194
 github: security-egg
-email: tkavalierou@gmail.com
+
 
 # Build settings
 plugins:
