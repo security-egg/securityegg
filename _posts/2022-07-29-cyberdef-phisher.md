@@ -36,7 +36,7 @@ Lets return to this file and see its contents.<br>
 <img src="/securityegg/assets/images/cyberdefenders/phisher/5_seeds.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
 We see words splitted to three lines. Now remember, we discovered two code parts referring to the seed phrases. The one was counting the words, so we expect to see a specific number of words, and the other was appending the phrase to the file. Appending with the FILE_APPEND argument. Meaning, every line is a seed phrase.
 <h5>Question 6: Write down the seed phrase of the most recent phishing incident?</h5><br>
-And, the new lines are appending at the end of the file so.
+And, the new lines are appending at the end of the file.
 <h5>Question 7: Which medium had been used for credential dumping?</h5><br>
 But, what is the meaning of the request to that Telegram api. Read the url one more time.<br>
 <img src="/securityegg/assets/images/cyberdefenders/phisher/7_code_part.png" alt="oh, no!" style="margin-top: 2%; max-width: 100%"><br>
